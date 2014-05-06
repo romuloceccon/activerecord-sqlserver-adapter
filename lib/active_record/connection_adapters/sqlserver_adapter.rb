@@ -264,6 +264,10 @@ module ActiveRecord
         true
       end
 
+      def supports_partial_index?
+        @database_year >= 2008
+      end
+
       def supports_explain?
         true
       end
